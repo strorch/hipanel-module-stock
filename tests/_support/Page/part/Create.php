@@ -40,6 +40,7 @@ class Create extends Authenticated
 
         (new Select2($I, $base . 'select[id$=dst_ids]'))
             ->setValue($partData['dst_id']);
+        $I->click('label');
 
         (new Input($I, $base . 'input[id$=serials]'))
             ->setValue($partData['serials']);
